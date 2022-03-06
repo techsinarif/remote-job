@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Routes, Route, Link } from "react-router-dom";
+import TextEditor from './utils/components/TextEditor';
+import TobBar from './components/TobBar';
+import Home from './components/Home';
+import PostJob from './components/PostJob';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <TobBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="post-job" element={<PostJob />} />
+      </Routes>
     </div>
   );
 }

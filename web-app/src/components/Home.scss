@@ -1,0 +1,20 @@
+.home{
+  background: #0a0a0a26;
+  margin-top: 16px;
+  .job-list-container{
+    width: 65%;
+    margin: 0 auto;
+  }
+  .contact-container{
+    background-color: rgb(0 0 0 / 30%);
+    margin-top: 25px;
+  }
+  .copy-rights-container{
+    background-color: #1976d2;
+    padding: 10px 0;
+    color: #FFF;
+    .copy-rights{
+      text-align: center;
+    }
+  }
+}

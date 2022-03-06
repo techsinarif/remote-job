@@ -1,0 +1,23 @@
+.job-list{
+  .filter-options{
+    width: 70%;
+    .chip-info{
+      margin: 5px;
+    }
+  }
+  .job-desc-short{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card{
+    margin-bottom: 15px;
+    h5, h6, .job-desc-short {
+      margin: 10px 0;
+    }
+    .apply-btn{
+      justify-content: flex-end;
+    }
+  }
+}
